@@ -3,107 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gary | GalaxyUrsa</title>
-  <meta name="description" content="Gary / GalaxyUrsa - research-oriented developer focused on UAV search and rescue, ocean field reconstruction, and scientific visualization.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Jianheng Huang</title>
+  <meta name="description" content="Jianheng Huang builds open-source tools for ocean data reconstruction, scientific visualization, and drone-based search and rescue.">
+  <meta name="theme-color" content="#eef6f8">
+  <link rel="preconnect" href="https://github.com">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main class="page-shell">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow">GalaxyUrsa / GitHub Pages</p>
-        <h1 id="hero-title">Gary</h1>
-        <p class="hero-copy">Research-oriented developer working on UAV search and rescue, ocean field reconstruction, and scientific visualization.</p>
-        <div class="hero-actions" aria-label="Primary links">
-          <a class="button primary" href="https://github.com/GalaxyUrsa">GitHub</a>
-          <a class="button secondary" href="mailto:your.email@example.com">Email</a>
+<body id="top">
+  <nav class="glass-nav" aria-label="Primary navigation">
+    <a class="nav-brand" href="#top">GalaxyUrsa</a>
+    <div class="nav-links">
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Capability Map</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-eyebrow">Research Interests</p>
+          <h1 id="hero-title">3D Ocean Reconstruction and Prediction</h1>
+          <p class="hero-secondary-interest" id="hero-secondary-interest">Information Perception and Computation</p>
+          <p class="lead" id="hero-lead">My earlier work focused on information perception and computation for maritime applications. I am now building a 3D ocean reconstruction and prediction framework, with Pisces-Ocean as its prediction core and Pisces-Explorer as its visualization interface.</p>
         </div>
-      </div>
 
-      <aside class="mission-panel" aria-label="Research profile summary">
-        <div class="panel-topline">
-          <span>Research Log</span>
-          <span>galaxyursa.github.io</span>
+        <aside class="profile-card glass-surface" aria-label="Profile summary">
+          <img class="avatar" id="profile-avatar" src="assets/galaxyursa-avatar.webp" alt="GalaxyUrsa's GitHub avatar" width="112" height="112">
+          <div>
+            <p class="eyebrow profile-eyebrow" id="profile-eyebrow">Profile</p>
+            <p class="profile-name" id="profile-name">Jianheng Huang</p>
+            <p class="profile-status" id="profile-status">Master's Student at Sun Yat-sen University (SYSU)</p>
+          </div>
+          <dl class="quick-facts" id="quick-facts">
+            <div>
+              <dt>Email</dt>
+              <dd><a class="profile-link" href="mailto:jianhenghuang26@gmail.com">jianhenghuang26@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd><a class="profile-link" href="https://github.com/GalaxyUrsa">github.com/GalaxyUrsa</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="noscript-note">
+        This portfolio needs JavaScript to display the complete project timeline. The essential links remain available:
+        <a href="https://github.com/GalaxyUrsa">GitHub</a> and
+        <a href="mailto:jianhenghuang26@gmail.com">email</a>.
+      </div>
+    </noscript>
+
+    <div class="page-shell">
+      <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Latest first · Sorted by start date</p>
+          <h2 id="timeline-title">Timeline</h2>
         </div>
-        <img class="avatar" src="https://github.com/GalaxyUrsa.png" alt="Gary / GalaxyUrsa GitHub avatar" width="96" height="96">
-        <dl class="signal-list">
-          <div>
-            <dt>Track</dt>
-            <dd>UAV systems</dd>
-          </div>
-          <div>
-            <dt>Field</dt>
-            <dd>Ocean data</dd>
-          </div>
-          <div>
-            <dt>Output</dt>
-            <dd>3D visual insight</dd>
-          </div>
-        </dl>
-      </aside>
-    </section>
+        <ol class="timeline" id="timeline-mount"></ol>
+      </section>
 
-    <section class="section" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="projects-title">Featured Projects</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-index">UAV</p>
-          <h3>UAV Search and Rescue</h3>
-          <p>Autonomous and assisted aerial search workflows for emergency response scenarios.</p>
-          <span>Autonomous systems</span>
-        </article>
-        <article class="project-card">
-          <p class="project-index">OCN</p>
-          <h3>3D Ocean Field Reconstruction</h3>
-          <p>Reconstructing and exploring ocean data fields for scientific analysis and visual interpretation.</p>
-          <span>Scientific computing</span>
-        </article>
-        <article class="project-card">
-          <p class="project-index">VIS</p>
-          <h3>3D Visualization Demos</h3>
-          <p>Interactive visualization experiments for spatial data, ocean currents, and simulation outputs.</p>
-          <span>Scientific visualization</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="split section" aria-label="Research interests and skills">
-      <div class="focus-block">
-        <p class="eyebrow">Focus</p>
-        <h2>Research Interests</h2>
-        <ul class="clean-list">
-          <li>Autonomous systems and UAV applications</li>
-          <li>Geospatial and ocean data analysis</li>
-          <li>3D reconstruction and simulation</li>
-          <li>Applied AI for scientific workflows</li>
-        </ul>
-      </div>
-      <div class="focus-block">
-        <p class="eyebrow">Toolkit</p>
-        <h2>Skills</h2>
-        <div class="tag-list" aria-label="Skill list">
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>Scientific visualization</span>
-          <span>3D data</span>
-          <span>Simulation</span>
-          <span>GitHub</span>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected public repositories</p>
+          <h2 id="projects-title">Projects</h2>
         </div>
-      </div>
-    </section>
+        <div class="project-groups" id="projects-mount"></div>
+      </section>
 
-    <section class="contact section" aria-labelledby="contact-title">
-      <p class="eyebrow">Contact</p>
-      <h2 id="contact-title">Open to research collaboration and technical opportunities.</h2>
-      <p>Find my work on GitHub, or replace the email placeholder with your preferred contact address.</p>
-      <a href="https://github.com/GalaxyUrsa">github.com/GalaxyUrsa</a>
-    </section>
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research Focus · Core Capabilities · Related Projects</p>
+          <h2 id="skills-title">Capability Map</h2>
+        </div>
+        <div id="skills-mount"></div>
+      </section>
+
+    </div>
   </main>
+
+  <script src="data.js"></script>
+  <script src="render.js"></script>
 </body>
 </html>
