@@ -1,31 +1,5 @@
 // Single source of truth for the homepage. Dates use YYYY-MM.
 window.SITE_DATA = {
-  profile: {
-    name: "Jianheng Huang",
-    handle: "GalaxyUrsa",
-    avatar: "assets/galaxyursa-avatar.webp",
-    heroEyebrow: "Research Interests",
-    primaryInterest: "3D Ocean Reconstruction and Prediction",
-    secondaryInterest: "Information Perception and Computation",
-    currentWork:
-      "My earlier work focused on information perception and computation for maritime applications. I am now building a 3D ocean reconstruction and prediction framework, with Pisces-Ocean as its prediction core and Pisces-Explorer as its visualization interface.",
-    cardEyebrow: "Profile",
-    academicStatus: "Master's Student at Sun Yat-sen University",
-    github: "https://github.com/GalaxyUrsa",
-    email: "jianhenghuang26@gmail.com",
-    quickFacts: [
-      {
-        label: "Email",
-        value: "jianhenghuang26@gmail.com",
-        href: "mailto:jianhenghuang26@gmail.com",
-      },
-      {
-        label: "GitHub",
-        value: "github.com/GalaxyUrsa",
-        href: "https://github.com/GalaxyUrsa",
-      },
-    ],
-  },
 
   education: [
     {
@@ -50,6 +24,10 @@ window.SITE_DATA = {
     {
       id: "maritime-perception",
       name: "Maritime Perception",
+    },
+    {
+      id: "agent",
+      name: "Agent",
     },
   ],
 
@@ -102,7 +80,7 @@ window.SITE_DATA = {
       description:
         "Pisces-Ocean is the prediction core of a broader 3D ocean framework, focusing on learning spatial relationships in temperature and salinity observations to recover volumetric ocean fields.",
       architecture: {
-        src: "assets/Pisces-Ocean.png",
+        src: "assets/Pisces-Ocean.jpg",
         alt: "Pisces-Ocean architecture diagram",
         caption: "Pisces-Ocean architecture overview",
       },
@@ -113,13 +91,47 @@ window.SITE_DATA = {
         },
       ],
     },
+    {
+      id: "life-symphony",
+      groupId: "agent",
+      start: "2026-08",
+      end: null,
+      name: "Life Symphony",
+      summary: "An AI-assisted memoir companion that helps older adults preserve their life stories through gentle interviews and structured memory organization.",
+      stack: ["Python", "JavaScript", "Fastapi", "React", "Multimodal Agent"],
+      description:
+        "Life Symphony guides older adults through conversational life-story interviews, transforms confirmed memories into structured cards and life maps, and generates exportable memoir chapters. It integrates speech transcription, photo understanding, text-to-speech, and privacy-aware memory management while using only facts confirmed by the user.",
+      architecture: {
+        src: "assets/Life-Symphony.jpg",
+        alt: "Life-Symphony architecture diagram",
+        caption: "Life-Symphony architecture overview",
+      },
+      links: [
+        {
+          label: "GitHub",
+          url: "https://github.com/GalaxyUrsa/Life_Symphony",
+        },
+        {
+          label: "Demo",
+          url: "http://8.163.57.28:8000/"
+        }
+      ],
+    },
   ],
+
+  // Controls the central node in the Capability Map.
+  capabilityFocus: {
+    label: "Systems Focus",
+    title: "AI for Science and Software Systems Engineering",
+    description:
+      "Building scientific AI models, intelligent agents, and reliable software systems for real-world applications.",
+  },
 
   skills: [
     {
       name: "Python",
       description: "Model development, data processing, and real-time inference workflows.",
-      projectIds: ["pisces-ocean", "drone-search-and-rescue", "pisces-explorer"],
+      projectIds: ["pisces-ocean", "drone-search-and-rescue", "pisces-explorer", "life-symphony"],
     },
     {
       name: "Deep Learning",
@@ -129,7 +141,12 @@ window.SITE_DATA = {
     {
       name: "JavaScript",
       description: "Interactive interfaces for scientific data exploration.",
-      projectIds: ["pisces-explorer"],
+      projectIds: ["pisces-explorer", "life-symphony"],
+    },
+    {
+      name: "Agent",
+      description: "Design and development of intelligent agents with multimodal interaction, structured memory, and task-oriented workflows.",
+      projectIds: ["life-symphony"],
     },
   ],
 };
